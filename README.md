@@ -8,6 +8,7 @@
 %pip install catboost
 %pip install sklearn
 ```
+## Описание
 Результат выполнения задания представлен в файле ```VK_internship_ranking.ipynb```. \
 Ранжирование для тестовой выборки - в файле ```predictions.txt```.\
 Для тестовой выборки было получено значение ```NDCG = 0.91```.
