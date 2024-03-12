@@ -1,7 +1,10 @@
 # VK Ranking test task
 Тестовое задание в компанию VK на позицию intern ML-инженер.
 ## Установка
-```git clone https://github.com/lethxlity/VK_Ranking_test_task```\
+Клонировать репозиторий
+```
+git clone https://github.com/lethxlity/VK_Ranking_test_task
+```
 При запуске, например, в Google Colab, необходимые для запуска и повторения экспериментов библиотеки устанавливаются в Jupyter Notebook через ```%```.
 ```
 %pip install pandas
@@ -9,6 +12,9 @@
 %pip install sklearn
 ```
 Также ноутбук можно запустить локально, используя Docker.
+```
+cd VK_Ranking_test_task
+```
 ```
 docker build -t ranking .
 ```
