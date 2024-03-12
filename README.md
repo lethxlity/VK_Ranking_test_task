@@ -2,11 +2,23 @@
 Тестовое задание в компанию VK на позицию intern ML-инженер.
 ## Установка
 ```git clone https://github.com/lethxlity/VK_Ranking_test_task```\
-Необходимые для запуска и повторения экспериментов библиотеки устанавливаются в Jupyter Notebook через ```%```.
+При запуске, например, в Google Colab, необходимые для запуска и повторения экспериментов библиотеки устанавливаются в Jupyter Notebook через ```%```.
 ```
 %pip install pandas
 %pip install catboost
 %pip install sklearn
+```
+Также ноутбук можно запустить локально, используя Docker.
+```
+docker build -t ranking .
+```
+```
+docker run -it -p 8888:8888 ranking 
+```
+После запуска контейнера в командной строке появится ссылка на Jupyter Server с токеном:
+```
+Currently running servers:
+http://localhost:8888/?token=c8de56fa...
 ```
 ## Описание
 Результат выполнения задания представлен в файле ```VK_internship_ranking.ipynb```. Итоговое ранжирование - в файле ```predictions.txt```. Пример для запроса ```search_id = 399604``` представлен ниже.
